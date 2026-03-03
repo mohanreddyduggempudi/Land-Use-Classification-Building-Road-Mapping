@@ -1,76 +1,36 @@
-Land Use Classification – Building & Road Mapping
-📌 Overview
-This project implements a computer vision-based system to classify aerial images into four major land cover categories:
+Land Use Classification – Building and Road Mapping
 
-🌳 Vegetation
+This project implements a computer vision-based system to classify aerial images into major land cover categories such as buildings, roads, vegetation, and water bodies using OpenCV. The system also calculates the percentage area occupied by each land class in the image.
 
-💧 Water
+Aim
+To classify aerial images into buildings, roads, vegetation, and water using OpenCV and compute the percentage area of each land cover class.
 
-🛣️ Roads
-
-🏢 Buildings
-
-The system uses OpenCV with HSV color-based segmentation, applies morphological operations to remove noise, extracts contours to visualize boundaries, and calculates the percentage area of each land class.
-
-🚀 Features
-Multi-image batch processing
-
-HSV color-based segmentation
-
-Morphological noise removal
-
-Contour extraction and visualization
-
-Pixel-based land area percentage calculation
-
-Google Colab compatible
-
-🛠️ Technologies Used
+Technologies Used
 Python
-
 OpenCV
-
 NumPy
-
 Matplotlib
-
 Google Colab
 
-🧠 Methodology
-Upload aerial images
+Methodology
+Image preprocessing
+Conversion from BGR to HSV color space
+HSV color-based segmentation
+Morphological operations for noise removal
+Contour extraction for boundary visualization
+Percentage area calculation using pixel count
 
-Convert image from BGR to HSV color space
+Applications
+Urban planning and land analysis
+Smart city development
+Environmental monitoring
+Infrastructure assessment
+Land use mapping
 
-Apply color thresholding for each land class
+How to Run
 
-Perform morphological operations to remove noise
+Install requirements:
+pip install -r requirements.txt
 
-Extract contours and overlay on original image
-
-Calculate percentage of each land cover class
-
-📊 Sample Output
-Vegetation: 39.82%
-Water: 12.51%
-Road: 25.33%
-Building: 18.90%
-
-🔮 Future Enhancements
-Integration of Deep Learning (CNN / U-Net)
-
-Accuracy evaluation with labeled datasets
-
-GIS system integration
-
-Real-time drone image processing
-
-🎯 Applications
-Urban Planning
-
-Smart City Development
-
-Land Use Monitoring
-
-Encroachment Detection
-
-Environmental Analysis
+Run the program:
+python land_use_classification.py
