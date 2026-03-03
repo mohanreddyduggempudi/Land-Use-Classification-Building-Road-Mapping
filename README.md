@@ -74,15 +74,3 @@ Land Use Monitoring
 Encroachment Detection
 
 Environmental Analysis
-
-If you want, I can also generate:
-
-A more professional GitHub-styled README with badges
-
-Add embedded output images section
-
-Generate a requirements.txt file
-
-Create a short project demo description
-
-Just tell me 👍
